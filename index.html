@@ -16,6 +16,14 @@
             if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
               disabledEvent(e);
             }
+            // "P" key
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 80) {
+              disabledEvent(e);
+            }
+            // "S" key + PC
+            if (e.keyCode == 83 && (navigator.platform.match("PC") ? e.metaKey : e.ctrlKey)) {
+              disabledEvent(e);
+            }
             // "S" key + macOS
             if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {
               disabledEvent(e);
