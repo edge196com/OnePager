@@ -1,68 +1,10 @@
 <!DOCTYPE html>
 <html>
-<body oncontextmenu="return false;">
-    <script language="JavaScript">
-        document.oncontextmenu = function() {
-          return false;
-          }
-        window.onload = function() {
-          document.addEventListener("contextmenu", function(e){
-            e.preventDefault();
-          }, false);
-          document.addEventListener("keydown", function(e) {
-          //document.onkeydown = function(e) {
-            // "I" key
-            if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
-              disabledEvent(e);
-            }
-            // "J" key
-            if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
-              disabledEvent(e);
-            }
-            // "P" key
-            if (e.ctrlKey && e.shiftKey && e.keyCode == 80) {
-              disabledEvent(e);
-            }
-            // Control + "P" key
-            if (e.ctrlKey && e.keyCode == 80) {
-              disabledEvent(e);
-            }
-            // Control + "S" key
-            if (e.ctrlKey && e.keyCode == 83) {
-              disabledEvent(e);
-            }
-            // "S" key + PC
-            if (e.keyCode == 83 && (navigator.platform.match("PC") ? e.metaKey : e.ctrlKey)) {
-              disabledEvent(e);
-            }
-            // "S" key + macOS
-            if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {
-              disabledEvent(e);
-            }
-            // "U" key
-            if (e.ctrlKey && e.keyCode == 85) {
-              disabledEvent(e);
-            }
-            // "F12" key
-            if (event.keyCode == 123) {
-              disabledEvent(e);
-            }
-          }, false);
-          function disabledEvent(e){
-            if (e.stopPropagation){
-              e.stopPropagation();
-            } else if (window.event){
-              window.event.cancelBubble = true;
-            }
-            e.preventDefault();
-            return false;
-          }
-        };
-      </script>   
+<body oncontextmenu="return false;">  
     <iframe src="One Pager V26 Digital Version.pdf#zoom=50&toolbar=0&navpanes=0"
 style="pointer-events: none;"
-width="600px" 
-height="1000px"
-scrolling="auto">
+width="1200px" 
+height="5000px"
+scrolling="no">
 </body>
 </html>
